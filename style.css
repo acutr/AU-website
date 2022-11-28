@@ -5,19 +5,17 @@
 * {
     margin: 0;
 }
-
-html,
+/* html, */
 body {
-    height: 100%;
+    height: max(100vh,100%);
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     color: white;
-    overflow: hidden;
     font-family: 'Lora', serif;
-    background: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.8)), url(./images/suitCrossNoBG3.png);
-    background-position: top 20em;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,.8)),linear-gradient(to right, rgb(0,0,0,0.1), rgb(0,0,0,.9)), url(./images/suitCrossNoBG3.png);
     background-repeat:no-repeat;
-    /* background-size: contain; */
+    background-size: contain;
+    margin-bottom: 0;
 }
 
 a {
@@ -65,7 +63,7 @@ a:hover {
 
 .main {
     margin-top: 5em;
-    margin-left: 30em;
+    margin-left: calc(min(50vw, 600px) - 10em);
     text-align: justify;
 
 }
@@ -75,7 +73,6 @@ a:hover {
     padding: 0 .4em;
     font-size: 1.5em;
     transition: .2s ease-in-out;
-    background: rgba(0,0,0,0.8);
 }
 
 i:hover {
@@ -87,23 +84,28 @@ i:hover {
     /* background-color: green; */
     display: flex;
     justify-content: flex-end;
-    margin-top: 5em;
-    height: 100%;
+    margin: 5em 0;
+    /* height: 100%; */
     /* position:absolute;
     bottom: 6em;
     right: 0em; */
 }
 
-@media only screen and (max-width:900px) {
+/* @media only screen and (max-width:900px) {
     .main {
         margin-left: 0;
         background: rgba(0,0,0,0.4);
         box-shadow: 0 0 30px 20px rgba(0,0,0,0.4);
     }
     
-}
+} */
 
 @media only screen and (max-width:600px) {
+    .main {
+        margin-left: 0;
+        background: rgba(0,0,0,0.4);
+        box-shadow: 0 0 30px 20px rgba(0,0,0,0.4);
+    }
     .nav {
         flex-direction: column;
         align-items: center;
