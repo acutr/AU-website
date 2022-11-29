@@ -11,8 +11,8 @@ html {
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
-    font-family: 'Lora', serif;
     background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,.8)),linear-gradient(rgb(0,0,0,0), rgb(0,0,0,.3)),linear-gradient(to right, rgb(0,0,0,0.1), rgb(0,0,0,.9)), url(./images/suitCrossNoBG6.png);
     background-repeat:no-repeat;
     background-size: auto 100%;
@@ -20,6 +20,7 @@ body {
     background-attachment: fixed;
     margin-bottom: 0;
 }
+
 
 a {
     text-decoration: none;
@@ -65,10 +66,12 @@ a:hover {
 }
 
 .main {
+    font-family: 'Lora', serif;
+    line-height: 1.5em;
     margin-top: 5em;
+    margin-bottom: auto;
     margin-left: calc(min(50vw, 600px) - 10em);
     text-align: justify;
-
 }
 
 .i {
@@ -87,13 +90,17 @@ i:hover {
     /* background-color: green; */
     display: flex;
     justify-content: flex-end;
-    margin: 5em 0;
-    /* height: 100%; */
-    /* position:absolute;
-    bottom: 6em;
-    right: 0em; */
+    margin: 3em 0;
+    align-self: flex-end;
 }
 
+.innercont {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    height: calc(100vh - 13em);
+    /* background: green; */
+}
 /* @media only screen and (max-width:900px) {
     .main {
         margin-left: 0;
