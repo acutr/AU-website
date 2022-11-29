@@ -13,7 +13,7 @@ body {
     background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,.8)),linear-gradient(rgb(0,0,0,0), rgb(0,0,0,.3)),linear-gradient(to right, rgb(0,0,0,0.1), rgb(0,0,0,.9)), url(./images/suitCrossNoBG8.png);
     background-repeat:no-repeat;
     background-size: contain;
-    background-position: left top;
+    background-position: left bottom;
     background-attachment: fixed;
     margin-bottom: 0;
 }
@@ -59,8 +59,12 @@ a {
 }
 
 a:hover {
-    color: pink;
+    color: lightskyblue;
     scale: 1.5;
+}
+
+a:active {
+    color: lightgreen;
 }
 
 .main {
@@ -80,11 +84,6 @@ a:hover {
     margin: 4rem 0;
 }
 
-i:hover {
-    color:pink;
-    scale: 1.5;
-}
-
 .footer {
     /* background-color: red; */
     display: flex;
@@ -101,9 +100,10 @@ i:hover {
 }
 
 @media only screen and (max-width:600px) {
-    body {
-        background-position: center;
-    }
+    /* body {
+        background-position: bottom;
+        background-attachment: fixed;
+    } */
     .main {
         margin-left: 0;
         /* background: rgba(0,0,0,0.4);
