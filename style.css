@@ -28,20 +28,20 @@ a {
     min-height: 100%;
     margin: auto;
     position: relative;
-    padding: 0 1em;
+    padding: 0 1rem;
 }
 
 .name {
-    margin-top: .75em;
+    margin-top: 4rem;
     margin-left: auto;
-    font-size: 4em;
+    font-size: 4rem;
+    text-align: center;
     width: fit-content;
     /* background: green; */
 }
 
 .nav {
     /* background: green; */
-    /* margin: 2em; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -50,7 +50,7 @@ a {
 .nav-item {
     color: white;
     font-size:larger;
-    margin: 2em 1.5em;
+    margin: 2rem 1.5rem;
     transition: .2s ease-in-out;
 }
 
@@ -66,17 +66,18 @@ a:hover {
 .main {
     font-family: 'Lora', serif;
     line-height: 1.5em;
-    margin-top: 3em;
+    margin-top: 3rem;
     margin-bottom: auto;
-    margin-left: calc(min(50vw, 600px) - 10em);
+    margin-left: calc(min(50vw, 600px) - 10rem);
     text-align: justify;
 }
 
 .i {
     color: white;
-    padding: 0 .4em;
-    font-size: 1.5em;
+    padding: 0 .4rem;
+    font-size: 1.5rem;
     transition: .2s ease-in-out;
+    margin: 4rem 0;
 }
 
 i:hover {
@@ -85,28 +86,19 @@ i:hover {
 }
 
 .footer {
-    /* background-color: green; */
+    /* background-color: red; */
     display: flex;
     justify-content: flex-end;
-    margin: 4em 0;
     align-self: flex-end;
+    box-sizing: border-box;
 }
 
 .innercont {
     display: flex;
     flex-direction: column;
-    margin-top: auto;
-    height: calc(100vh - 13em);
+    height: calc(100vh - 16rem);
     /* background: green; */
 }
-/* @media only screen and (max-width:900px) {
-    .main {
-        margin-left: 0;
-        background: rgba(0,0,0,0.4);
-        box-shadow: 0 0 30px 20px rgba(0,0,0,0.4);
-    }
-    
-} */
 
 @media only screen and (max-width:600px) {
     .main {
@@ -118,12 +110,17 @@ i:hover {
         flex-direction: column;
         align-items: center;
     }
-    .nav-item:last-of-type {
-        margin: 1em;
+    .nav-item {
+        margin: .5rem 0;
     }
+    /* .nav-item:last-of-type {
+        margin: .5rem;
+    } */
     .name {
         margin: auto;
-        margin-top: .75em;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        font-size: 3rem;
     }
     
 }
